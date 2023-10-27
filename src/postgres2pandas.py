@@ -101,7 +101,7 @@ con.close()
 import pandas as pd
 
 ## Import fetched rows and iterate to create DataFrame
-df = pd.DataFrame(rows, columns=[col[0] for col in cur.description])
+df = pd.DataFrame(rows)
 
 print(df)
 
